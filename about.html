@@ -3,30 +3,19 @@
 <head>
 <style>
 
-/* Initializes the background image/gif */
-body {
-	background-image:url('testinganim.gif');
-}
-
 div {
 	float: left;
 }
 
-table {
-	width: 100%
-	border-collapse: collapse;
-	border: -5px solid black;
-}
-
 .iconDiv {
-	border: 0px solid black;
+	border: 0px solid #fedfdf;
 	height: 200px;
 	width: 200px;
 	display: inline-block;
 }
 
 .bannerDiv {
-	border: 0px solid black;
+	border: 0px solid slateblue;
 	display: inline-block;
 
 }
@@ -39,15 +28,9 @@ table {
 
 .mainDiv {
 	position: relative;
-	border: 0px solid black;
-	width: 490px;
-	height: 250px;
-	display: inline-block;
-}
-
-.myDiv2 {
-	border: 0px solid black;
+	border: 2px solid tomato;
 	width: 500px;
+	height: 250px;
 	display: inline-block;
 }
 
@@ -66,31 +49,17 @@ table {
 	margin-bottom: -4px;
 }
 
-
 </style>
 </head>
-
 <body>
 
-<script>
-
-function swapModeDark(){
-	document.body.style.backgroundImage = "url('testinganim2.gif')";
-}
-
-function swapModeLight(){
-	document.body.style.backgroundImage = "url('testinganim.gif')";
-}
-
-</script>
-
 <div class="iconDiv">
-	<img src="icontransparent.png" alt="icon" width="200" height="200">
+	<img src="icon.png" alt="icon" width="200" height="200">
 </div>
 
 
 <div class="bannerDiv">
-	<img src="NameLayout1.png" alt="banner" height="150" >
+	<img src="NameLayout.png" alt="banner" height="150" >
 
 	<br>
 
@@ -135,46 +104,15 @@ function swapModeLight(){
 		</a>
 	</div>
 
-<!--
 	<div class="imageStackVert">
 			<img src="logofooter.png" alt="logofooter" width="200" height="570">
 	</div>
--->
-
-<div class="imageStackVert">
-		<img src="darkmode.png" alt="darkMode" onclick="swapModeDark()">
-</div>
-<div class="imageTopVert">
-		<img src="lightmode.png" alt="lightMode" onclick="swapModeLight()">
-</div>
-
 
 </div>
 
 <div class="mainDiv">
-	<img src="ArtworkBanner.png" alt="artHeader">
-
-	<img src="ChainSawMan.png" alt="csm" width="100%">
-
-</div>
-
-<div class="myDiv2">
-	<img src="ProjectsBanner.png" alt="projHeader">
-
-	<a href="https://thesmashers.itch.io/hyperjustice">
-		<img src="hyperjusticeLogo.png" alt="hyperjustice" width="100%">
-	</a>
-
-	<a href="https://www.youtube.com/watch?v=EXLmGaO1O5o">
-		<img src="2Dshooter.png" alt="2dShooter" width="100%">
-	</a>
-
-	<a href="https://www.youtube.com/watch?v=e8tA20dywWE">
-		<img src="physPICO8.png" alt="pico8" width="100%">
-	</a>
-
-
-
+	<img src="AboutHeader.png" alt="artHeader" width="500">
+	<p> About </p>
 </div>
 
 
