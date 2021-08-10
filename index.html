@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
+* {
+	box-sizing: border-box;
+}
 /* Initializes the background image/gif */
 body {
 	background-image:url('testinganim.gif');
@@ -41,14 +45,15 @@ table {
 	position: relative;
 	border: 0px solid black;
 	width: 490px;
-	height: 250px;
 	display: inline-block;
 }
 
 .myDiv2 {
+	position: relative;
 	border: 0px solid black;
 	width: 500px;
 	display: inline-block;
+	clear: top;
 }
 
 .imageTopVert {
@@ -65,6 +70,22 @@ table {
 	margin-top: -4px;
 	margin-bottom: -4px;
 }
+
+.parentDiv {
+	display: inline-block;
+}
+
+/* WORK IN PROGRESS */
+
+
+@media only screen and (max-width: 620px) {
+  .iconDiv, .sideDiv, .mainDiv, .myDiv2 {
+    width: 100%;
+  }
+}
+
+
+/* WORK IN PROGRESS */
 
 
 </style>
@@ -119,19 +140,19 @@ function swapModeLight(){
 
 	<div class="imageTopVert">
 		<a href="https://twitter.com/Senfflasche">
-			<img src="twitterlogo.png" alt="twitter" width="200">
+			<img src="twitterlogo.png" alt="twitter">
 		</a>
 	</div>
 
 	<div class="imageStackVert">
 		<a href="https://www.linkedin.com/in/liamahearn/">
-			<img src="linkedinlogo.png" alt="linkedin" width="200">
+			<img src="linkedinlogo.png" alt="linkedin">
 		</a>
 	</div>
 
 	<div class="imageStackVert">
 		<a href="https://senfflasche.newgrounds.com/">
-			<img src="newgroundslogo.png" alt="newgrounds" width="200">
+			<img src="newgroundslogo.png" alt="newgrounds">
 		</a>
 	</div>
 
@@ -151,35 +172,35 @@ function swapModeLight(){
 
 </div>
 
-<div class="mainDiv">
-	<img src="ArtworkBanner.png" alt="artHeader">
+	<div class="mainDiv">
+		<img src="ArtworkBanner.png" alt="artHeader">
 
-	<img src="ChainSawMan.png" alt="csm" width="100%">
+		<img src="ChainSawMan.png" alt="csm" width="100%">
 
-</div>
+	</div>
 
-<div class="myDiv2">
-	<img src="ProjectsBanner.png" alt="projHeader">
+	<div class="myDiv2">
+		<img src="ProjectsBanner.png" alt="projHeader">
 
-	<a href="https://thesmashers.itch.io/hyperjustice">
-		<img src="hyperjusticeLogo.png" alt="hyperjustice" width="100%">
-	</a>
+		<a href="https://thesmashers.itch.io/hyperjustice">
+			<img src="hyperjusticeLogo.png" alt="hyperjustice" width="100%">
+		</a>
 
-	<a href="https://www.youtube.com/watch?v=EXLmGaO1O5o">
-		<img src="2Dshooter.png" alt="2dShooter" width="100%">
-	</a>
+		<a href="https://www.youtube.com/watch?v=EXLmGaO1O5o">
+			<img src="2Dshooter.png" alt="2dShooter" width="100%">
+		</a>
 
-	<a href="https://www.youtube.com/watch?v=e8tA20dywWE">
-		<img src="physPICO8.png" alt="pico8" width="100%">
-	</a>
+		<a href="https://www.youtube.com/watch?v=e8tA20dywWE">
+			<img src="physPICO8.png" alt="pico8" width="100%">
+		</a>
 
 
 
-</div>
-
+	</div>
 
 
 
 
 </body>
 </html>
+
