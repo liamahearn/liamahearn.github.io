@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.ico">
 <style>
+
+* {
+	box-sizing: border-box;
+}
+/* Initializes the background image/gif */
+body {
+	background-image:url('testinganim.gif');
+}
 
 div {
 	float: left;
 }
 
+table {
+	width: 100%
+	border-collapse: collapse;
+	border: -5px solid black;
+}
+
 .iconDiv {
-	border: 0px solid #fedfdf;
+	border: 0px solid black;
 	height: 200px;
 	width: 200px;
 	display: inline-block;
 }
 
 .bannerDiv {
-	border: 0px solid slateblue;
+	border: 0px solid black;
 	display: inline-block;
 
 }
@@ -28,10 +44,17 @@ div {
 
 .mainDiv {
 	position: relative;
-	border: 2px solid tomato;
-	width: 500px;
-	height: 250px;
+	border: 0px solid black;
+	width: 490px;
 	display: inline-block;
+}
+
+.myDiv2 {
+	position: relative;
+	border: 0px solid black;
+	width: 500px;
+	display: inline-block;
+	clear: top;
 }
 
 .imageTopVert {
@@ -49,17 +72,47 @@ div {
 	margin-bottom: -4px;
 }
 
+.parentDiv {
+	display: inline-block;
+}
+
+/* WORK IN PROGRESS */
+
+
+@media only screen and (max-width: 620px) {
+  .iconDiv, .sideDiv, .mainDiv, .myDiv2 {
+    width: 100%;
+  }
+}
+
+
+/* WORK IN PROGRESS */
+
+
 </style>
 </head>
+
 <body>
 
+<script>
+
+function swapModeDark(){
+	document.body.style.backgroundImage = "url('testinganim2.gif')";
+}
+
+function swapModeLight(){
+	document.body.style.backgroundImage = "url('testinganim.gif')";
+}
+
+</script>
+
 <div class="iconDiv">
-	<img src="icon.png" alt="icon" width="200" height="200">
+	<img src="icontransparent.png" alt="icon" width="200" height="200">
 </div>
 
 
 <div class="bannerDiv">
-	<img src="NameLayout.png" alt="banner" height="150" >
+	<img src="NameLayout1.png" alt="banner" height="150" >
 
 	<br>
 
@@ -81,43 +134,6 @@ div {
 
 
 </div>
-
-<br>
-
-<div class="sideDiv">
-
-	<div class="imageTopVert">
-		<a href="https://twitter.com/Senfflasche">
-			<img src="twitterlogo.png" alt="twitter" width="200">
-		</a>
-	</div>
-
-	<div class="imageStackVert">
-		<a href="https://www.linkedin.com/in/liamahearn/">
-			<img src="linkedinlogo.png" alt="linkedin" width="200">
-		</a>
-	</div>
-
-	<div class="imageStackVert">
-		<a href="https://senfflasche.newgrounds.com/">
-			<img src="newgroundslogo.png" alt="newgrounds" width="200">
-		</a>
-	</div>
-
-	<div class="imageStackVert">
-			<img src="logofooter.png" alt="logofooter" width="200" height="570">
-	</div>
-
-</div>
-
-<div class="mainDiv">
-	<img src="AboutHeader.png" alt="artHeader" width="500">
-	<p> About </p>
-</div>
-
-
-
-
-
+	
 </body>
 </html>
