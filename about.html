@@ -76,6 +76,16 @@ table {
 	display: inline-block;
 }
 
+.mainText {
+	position: relative;
+	border: 0px solid black;
+	width: 500px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+	background-color: white;
+
+}
 /* WORK IN PROGRESS */
 
 
@@ -129,11 +139,59 @@ function swapModeLight(){
 	</div>
 
 	<div class="bannerButton">
-		<img src="ContactButton.png" alt="contact" height="50">
+		<a href = "mailto: liam.ahearn2@yahoo.com">
+			<img src="ContactButton.png" alt="contact" height="50">
+		</a>
 	</div>
+
+</div>
+
+
+<br>
+
+<div class="sideDiv">
+
+	<div class="imageTopVert">
+		<a href="https://twitter.com/Senfflasche">
+			<img src="twitterlogo.png" alt="twitter">
+		</a>
+	</div>
+
+	<div class="imageStackVert">
+		<a href="https://www.linkedin.com/in/liamahearn/">
+			<img src="linkedinlogo.png" alt="linkedin">
+		</a>
+	</div>
+
+	<div class="imageStackVert">
+		<a href="https://senfflasche.newgrounds.com/">
+			<img src="newgroundslogo.png" alt="newgrounds">
+		</a>
+	</div>
+
+<!--
+	<div class="imageStackVert">
+			<img src="logofooter.png" alt="logofooter" width="200" height="570">
+	</div>
+-->
+
+<div class="imageStackVert">
+		<img src="darkmode.png" alt="darkMode" onclick="swapModeDark()">
+</div>
+<div class="imageTopVert">
+		<img src="lightmode.png" alt="lightMode" onclick="swapModeLight()">
+</div>
 
 
 </div>
-	
+
+<div class="mainText">
+	<p> My name is Liam A'Hearn, and I am a second year student at Santa Clara University
+		studying Computer Science and Engineering! I love combining art and coding to create
+		my own little projects, and this is a place to share them with others! This wesbite
+	is still very much a work in progress, and I hope to improve and grow it over time!</p>
+
+</div>
+
 </body>
 </html>
