@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Fredoka+One">
 	<link rel="icon" href="favicon.ico">
 <style>
 
@@ -10,18 +11,29 @@
 }
 /* Initializes the background image/gif */
 body {
-	background-image:url('testinganim.gif');
+	background-image: url('tilinglight.png');
+	font-family: 'Fredoka One', sans-serif;
+	background-attachment: fixed;
+	cursor: url("pixelcursor.png"), url("cursor.cur"), default;
 }
 
 div {
 	float: left;
 }
 
-table {
-	width: 100%
-	border-collapse: collapse;
-	border: -5px solid black;
+* a:hover {
+  color: black;
+  text-decoration: none; /* no underline */
+	cursor: url("fingercursor.png"), url("finger.cur"), default;
 }
+
+* li:hover {
+	cursor: url("fingercursor.png"), url("finger.cur"), default;
+}
+
+
+ /* style */
+
 
 .iconDiv {
 	border: 0px solid black;
@@ -33,37 +45,33 @@ table {
 .bannerDiv {
 	border: 0px solid black;
 	display: inline-block;
-
 }
 
 .sideDiv {
 	clear: left;
 	display: inline-block;
 	width: 200px;
+	text-align: right;
+  margin-right: 1em;
 }
 
 .mainDiv {
 	position: relative;
 	border: 0px solid black;
-	width: 490px;
-	display: inline-block;
+	width: 70%;
+	margin-left: -0.5em;
+	margin-top: 0.5em;
 }
 
-.myDiv2 {
-	position: relative;
-	border: 0px solid black;
-	width: 500px;
-	display: inline-block;
-	clear: top;
-}
+.mainContentDiv {
+	width: 48%;
+	outline: 4px solid #23213d;
+	padding-left: 1em;
+	padding-right: 0.8em;
+	padding-top: -1em;
 
-.imageTopVert {
-	clear: left;
-}
-
-.imageStackVert {
-	clear: left;
-	margin-top: -4px;
+	background-color: #daffc7;
+	font-size: 1.2em;
 }
 
 .bannerButton {
@@ -72,33 +80,53 @@ table {
 	margin-bottom: -4px;
 }
 
-.parentDiv {
-	display: inline-block;
+.pico8DisplayDiv {
+	display: flex;
+	outline: 4px solid #23213d;
+	margin: 1%;
+	background-color: #daffc7;
 }
 
-.mainText {
-	position: relative;
-	border: 0px solid black;
-	width: 398px;
-	height: 153px;
-	padding-left: 10px;
-	padding-right: 10px;
-	display: inline-block;
-	background-color: white;
-
+.pico8DisplayDiv img{
+	height: 100%;
+	width: 20vw;
+	object-fit: cover;
+	vertical-align: middle;
 }
+
+.pico8smallDiv {
+	width: 40vw;
+	display: inline;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+	padding-top: -1.5%;
+}
+
+.pico8HeaderDiv{
+	display: inline-block;
+	padding-left: 1vw;
+	padding-top: 1vh;
+}
+
 /* WORK IN PROGRESS */
 
+@media only screen and (max-width: 1095px) {
+  #hidingDiv {
+    display: none;
+  }
+
+	.pico8smallDiv {
+		width: 70vw;
+	}
+}
 
 @media only screen and (max-width: 620px) {
-  .iconDiv, .sideDiv, .mainDiv, .myDiv2 {
+  .iconDiv, .sideDiv, .mainDiv {
     width: 100%;
   }
 }
 
-
 /* WORK IN PROGRESS */
-
 
 </style>
 </head>
@@ -107,17 +135,32 @@ table {
 
 <script>
 
-function swapModeDark(){
-	document.body.style.backgroundImage = "url('testinganim2.gif')";
-}
+	var clicks = 0;
 
-function swapModeLight(){
-	document.body.style.backgroundImage = "url('testinganim.gif')";
-}
+	function flipflop(){
+		if(clicks == 0){
+			swapModeDark();
+			document.getElementById("swapIcon").src = "lightmode.png";
+			clicks++;
+		}else{
+			swapModeLight();
+			document.getElementById("swapIcon").src = "darkmode.png";
+			clicks = 0;
+		}
+	}
+
+	function swapModeDark(){
+		document.body.style.backgroundImage = "url('tilingdark.png')";
+	}
+
+	function swapModeLight(){
+		document.body.style.backgroundImage = "url('tilinglight.png')";
+	}
 
 </script>
 
-<div class="iconDiv">
+
+<div class="iconDiv" id="hidingDiv">
 	<img src="icontransparent.png" alt="icon" width="200" height="200">
 </div>
 
@@ -145,54 +188,63 @@ function swapModeLight(){
 		</a>
 	</div>
 
-</div>
 
+</div>
 
 <br>
 
-<div class="sideDiv">
 
-	<div class="imageTopVert">
-		<a href="https://twitter.com/Senfflasche">
-			<img src="twitterlogo.png" alt="twitter">
-		</a>
-	</div>
+<div class="sideDiv" id = "hidingDiv">
 
-	<div class="imageStackVert">
-		<a href="https://www.linkedin.com/in/liamahearn/">
-			<img src="linkedinlogo.png" alt="linkedin">
-		</a>
-	</div>
+<table>
+	<tr>
+		<td>
+			<a href="https://twitter.com/Senfflasche">
+				<img src="Twitter.png" alt="twitter" width="75%">
+			</a>
+		</td>
+		<td>
+			<a href="https://www.linkedin.com/in/liamahearn/">
+				<img src="Linkedin.png" alt="linkedin" width="75%">
+			</a>
+		</td>
+		<td>
+			<a href="https://senfflasche.newgrounds.com/">
+				<img src="NG.png" alt="newgrounds" width="75%">
+			</a>
+		</td>
+		<td>
+			<a>
+				<img src = "darkmode.png" alt="lightMode" onclick="flipflop()" width="75%" id = "swapIcon">
+			</a>
+		</td>
 
-	<div class="imageStackVert">
-		<a href="https://senfflasche.newgrounds.com/">
-			<img src="newgroundslogo.png" alt="newgrounds">
-		</a>
-	</div>
-
-<!--
-	<div class="imageStackVert">
-			<img src="logofooter.png" alt="logofooter" width="200" height="570">
-	</div>
--->
-
-<div class="imageStackVert">
-		<img src="darkmode.png" alt="darkMode" onclick="swapModeDark()">
-</div>
-<div class="imageTopVert">
-		<img src="lightmode.png" alt="lightMode" onclick="swapModeLight()">
-</div>
-
+	</tr>
+</table>
 
 </div>
 
-<div class="mainText">
-	<p> My name is Liam A'Hearn, and I am a second year student at Santa Clara University
-		studying Computer Science and Engineering! I love combining art and coding to create
-		my own little projects, and this is a place to share them with others! This wesbite
-	is still very much a work in progress, and I hope to improve and grow it over time!</p>
+
+	<div class="mainDiv">
+		<div class="mainContentDiv" style="margin-right: 1em;">
+		<header>
+			<h1> About This Site </h1>
+		</header>
+
+		<!-- Group Project List -->
+
+			<p>
+				My name is Liam A'Hearn, and I am a third year student at Santa Clara University studying
+				Computer Science and Engineering! I love combining art and coding to create my own little
+				projects, and this is a place to share them with others! This wesbite is still very much a
+				 work in progress, and I hope to improve and grow it over time!
+			</p>
+
+		</div>
+	</div>
 
 </div>
+
 
 </body>
 </html>

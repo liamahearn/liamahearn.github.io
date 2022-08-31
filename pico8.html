@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Fredoka+One">
+	<link rel="icon" href="favicon.ico">
+<style>
+
+* {
+	box-sizing: border-box;
+}
+/* Initializes the background image/gif */
+body {
+	background-image: url('tilinglight.png');
+	font-family: 'Fredoka One', sans-serif;
+	background-attachment: fixed;
+	cursor: url("pixelcursor.png"), url("cursor.cur"), default;
+}
+
+div {
+	float: left;
+}
+
+* a:hover {
+  color: black;
+  text-decoration: none; /* no underline */
+	cursor: url("fingercursor.png"), url("finger.cur"), default;
+}
+
+* li:hover {
+	cursor: url("fingercursor.png"), url("finger.cur"), default;
+}
+
+
+ /* style */
+
+
+.iconDiv {
+	border: 0px solid black;
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+}
+
+.bannerDiv {
+	border: 0px solid black;
+	display: inline-block;
+}
+
+.sideDiv {
+	clear: left;
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+  margin-right: 1em;
+}
+
+.mainDiv {
+	position: relative;
+	border: 0px solid black;
+	width: 80%;
+}
+
+.bannerButton {
+	display: inline-block;
+	margin-top: -4px;
+	margin-bottom: -4px;
+}
+
+.pico8DisplayDiv {
+	display: flex;
+	outline: 4px solid #23213d;
+	margin: 1%;
+	background-color: #daffc7;
+}
+
+.pico8DisplayDiv img{
+	height: 100%;
+	width: 20vw;
+	object-fit: cover;
+	vertical-align: middle;
+}
+
+.pico8smallDiv {
+	width: 40vw;
+	display: inline;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+	padding-top: -1.5%;
+}
+
+.pico8HeaderDiv{
+	display: inline-block;
+	padding-left: 20.75vw;
+	padding-top: 1vh;
+}
+
+/* WORK IN PROGRESS */
+
+@media only screen and (max-width: 1095px) {
+  #hidingDiv {
+    display: none;
+  }
+
+	.pico8smallDiv {
+		width: 70vw;
+	}
+}
+
+@media only screen and (max-width: 620px) {
+  .iconDiv, .sideDiv, .mainDiv {
+    width: 100%;
+  }
+}
+
+/* WORK IN PROGRESS */
+
+</style>
+</head>
+
+<body>
+
+<script>
+
+	var clicks = 0;
+
+	function flipflop(){
+		if(clicks == 0){
+			swapModeDark();
+			document.getElementById("swapIcon").src = "lightmode.png";
+			clicks++;
+		}else{
+			swapModeLight();
+			document.getElementById("swapIcon").src = "darkmode.png";
+			clicks = 0;
+		}
+	}
+
+	function swapModeDark(){
+		document.body.style.backgroundImage = "url('tilingdark.png')";
+	}
+
+	function swapModeLight(){
+		document.body.style.backgroundImage = "url('tilinglight.png')";
+	}
+
+</script>
+
+<div class="iconDiv" id="hidingDiv">
+	<img src="icontransparent.png" alt="icon" width="200" height="200">
+</div>
+
+
+<div class="bannerDiv">
+	<img src="NameLayout1.png" alt="banner" height="150" >
+
+	<br>
+
+	<div class="bannerButton">
+		<a href="index.html">
+			<img src="HomeButton.png" alt="home" height="50">
+		</a>
+	</div>
+
+	<div class="bannerButton">
+		<a href="about.html">
+			<img src="AboutButton.png" alt="about" height="50">
+		</a>
+	</div>
+
+	<div class="bannerButton">
+		<a href = "mailto: liam.ahearn2@yahoo.com">
+			<img src="ContactButton.png" alt="contact" height="50">
+		</a>
+	</div>
+
+
+</div>
+
+<br>
+
+
+<div class="sideDiv" id = "hidingDiv">
+
+<table>
+	<tr>
+		<td>
+			<a href="https://twitter.com/Senfflasche">
+				<img src="Twitter.png" alt="twitter" width="75%">
+			</a>
+		</td>
+		<td>
+			<a href="https://www.linkedin.com/in/liamahearn/">
+				<img src="Linkedin.png" alt="linkedin" width="75%">
+			</a>
+		</td>
+		<td>
+			<a href="https://senfflasche.newgrounds.com/">
+				<img src="NG.png" alt="newgrounds" width="75%">
+			</a>
+		</td>
+		<td>
+			<a>
+				<img src = "darkmode.png" alt="lightMode" onclick="flipflop()" width="75%" id = "swapIcon">
+			</a>
+		</td>
+
+	</tr>
+</table>
+
+</div>
+
+	<div class="mainDiv">
+
+		<div class="pico8HeaderDiv">
+			<img src="pico8logo.png" alt="Pico8 Games" width="50%">
+		</div>
+		<div class="pico8DisplayDiv">
+			<a href="gameboy.html">
+				<img src="Moss.gif" alt="Animated image of a top-down fantasy RPG" style="float: left;">
+			</a>
+			<div class="pico8smallDiv">
+				<header>
+					<h1> Tale of Moss: Legends of Parthenica </h1>
+				</header>
+				<!--  Hide this as screen size decreases -->
+				<div id="hidingDiv">
+					<p> A top-down 2D retro adventure, reminiscient of handheld RPGs, based on the D&D campaign my friends and I have been playing for the last several months.
+					The entire party is hopelessly enamored by an NPC named Moss, so the game revolves around running into our heartstruck characters all around town.
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="pico8DisplayDiv">
+
+				<img src="demonball.gif" alt="Animated image of a simple handheld-style game" style="float: left;">
+
+			<div class="pico8smallDiv">
+				<header>
+					<h1>(WIP) Demonball Demake</h1>
+				</header>
+				<!--  Hide this as screen size decreases -->
+				<div id="hidingDiv">
+					<p> A demake of the 2018 GMTK Game Jam entry Demonball by Room of Snakes, this is a work in progress game that strives to replicate the smooth controls
+					and creative mechanics that the original offers. As of now, enemies are nowhere in sight, so have fun kicking that ball around as fast as it will go!</p>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="pico8DisplayDiv">
+			<a href="gnw.html">
+				<img src="gnw.gif" alt="Animated image of a simple handheld-style game" style="float: left;">
+			</a>
+			<div class="pico8smallDiv">
+				<header>
+					<h1>Game & Watch</h1>
+				</header>
+				<!--  Hide this as screen size decreases -->
+				<div id="hidingDiv">
+					<p> A two-button arcade game styled after Nintendo's handheld Game & Watch series, this cartridge is an endless circus act of keeping colored balls bouncing, using the left and right arrow keys,
+						as they pass through a construction site!
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="pico8DisplayDiv">
+				<img src="Bounce.gif" alt="Animated image of a 2D physics simulation" style="float: left;">
+			<div class="pico8smallDiv">
+				<header>
+					<h1>Gravity and Elasticity Simulator</h1>
+				</header>
+				<!--  Hide this as screen size decreases -->
+				<div id="hidingDiv">
+					<p> A 2D, point based physics simulation with toggleable gravity and elasticity. Click to create a series of points connected by rubber bands that
+						bounce and stretch all over! Like much of my other projects in PICO-8, this demanded smart usage of Lua's array-like structures, tables.
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="pico8DisplayDiv">
+
+				<img src="Paint.gif" alt="Animated image of a drawing program" style="float: left;">
+
+			<div class="pico8smallDiv">
+				<header>
+					<h1>Paint Program</h1>
+				</header>
+				<!--  Hide this as screen size decreases -->
+				<div id="hidingDiv">
+					<p> A simple drawing tool, with toggleable pen size, colors, and even a fill tool! This project was an experiment on seeing if I could smooth
+						out the pencil tool positionally between frames, and figure out how to program a fill bucket on my own!
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+</body>
+</html>
