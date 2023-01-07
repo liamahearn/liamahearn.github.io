@@ -1,273 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Fredoka+One">
-	<link rel="icon" href="favicon.ico">
-<style>
-
-* {
-	box-sizing: border-box;
-}
-/* Initializes the background image/gif */
-body {
-	background-image: url('tilinglight.png');
-	font-family: 'Fredoka One', sans-serif;
-	background-attachment: fixed;
-	cursor: url("pixelcursor.png"), url("cursor.cur"), default;
-}
-
-div {
-	float: left;
-}
-
-* a:hover {
-  color: black;
-  text-decoration: none; /* no underline */
-	cursor: url("fingercursor.png"), url("finger.cur"), default;
-}
-
-* li:hover {
-	cursor: url("fingercursor.png"), url("finger.cur"), default;
-}
-
-
- /* style */
-
-
-.iconDiv {
-	border: 0px solid black;
-	height: 200px;
-	width: 200px;
-	display: inline-block;
-}
-
-.bannerDiv {
-	border: 0px solid black;
-	display: inline-block;
-}
-
-.sideDiv {
-	clear: left;
-	display: inline-block;
-	width: 200px;
-	text-align: right;
-  margin-right: 1em;
-}
-
-.mainDiv {
-	position: relative;
-	border: 0px solid black;
-	width: 70%;
-	margin-left: -0.5em;
-	margin-top: 0.5em;
-}
-
-.mainContentDiv {
-	width: 48%;
-	outline: 4px solid #23213d;
-	padding-left: 1em;
-	padding-right: 0.8em;
-	padding-top: -1em;
-
-	background-color: #daffc7;
-	font-size: 1.2em;
-}
-
-.bannerButton {
-	display: inline-block;
-	margin-top: -4px;
-	margin-bottom: -4px;
-}
-
-.pico8DisplayDiv {
-	display: flex;
-	outline: 4px solid #23213d;
-	margin: 1%;
-	background-color: #daffc7;
-}
-
-.pico8DisplayDiv img{
-	height: 100%;
-	width: 20vw;
-	object-fit: cover;
-	vertical-align: middle;
-}
-
-.pico8smallDiv {
-	width: 40vw;
-	display: inline;
-	padding-left: 1.5%;
-	padding-right: 1.5%;
-	padding-top: -1.5%;
-}
-
-.pico8HeaderDiv{
-	display: inline-block;
-	padding-left: 1vw;
-	padding-top: 1vh;
-}
-
-/* WORK IN PROGRESS */
-
-@media only screen and (max-width: 1095px) {
-  #hidingDiv {
-    display: none;
-  }
-
-	.pico8smallDiv {
-		width: 70vw;
-	}
-}
-
-@media only screen and (max-width: 620px) {
-  .iconDiv, .sideDiv, .mainDiv {
-    width: 100%;
-  }
-}
-
-/* WORK IN PROGRESS */
-
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Liam A'Hearn</title>
 </head>
-
 <body>
 
-<script>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="icon">
+            <img src="images/icon.png" alt="Liam's Site">
+        </div>
+        
+        <a href="index.html">
+            <div class="nav-button">Home</div>
+        </a>
+        <div class="nav-button">About</div>
+        <div class="nav-button">Résumé</div>
+        <a href="portfolio.html">
+            <div class="nav-button">Portfolio</div>
+        </a>
+    </div>
 
-	var clicks = 0;
+    <!-- Header -->
+    <div class="heading">
+        <div class="cloud" style="top: 85px; right: 15vw;">
+            <img src="images/cloud.png" alt="cloud-img" style="height: 50%; width: 50%;">
+        </div>
+        
+        <div class="heading-text">
+            <h1>Hi, I'm Liam.</h1>
+            <h3>Artist, programmer, designer.</h3>
+        </div>
 
-	function flipflop(){
-		if(clicks == 0){
-			swapModeDark();
-			document.getElementById("swapIcon").src = "lightmode.png";
-			clicks++;
-		}else{
-			swapModeLight();
-			document.getElementById("swapIcon").src = "darkmode.png";
-			clicks = 0;
-		}
-	}
+        <div class="cloud" style="top: 305px; left: 17.5%;">
+            <img src="images/cloud.png" alt="cloud-img" style="height: 60%; width: 60%; transform: scaleX(-1);">
+        </div>
 
-	function swapModeDark(){
-		document.body.style.backgroundImage = "url('tilingdark.png')";
-	}
+        <div class="cloud" style="top: 600px; left: 10%;">
+            <img src="images/cloud.png" alt="cloud-img">
+        </div>
+        <img src="images/mountain.png" alt="mountain-img" style="padding-left:2%">
+        <div class="cloud" style="top: 425px; right: 300px; transform: scaleX(-1);">
+            <img src="images/cloud.png" alt="cloud-img">
+        </div>
+    </div>
 
-	function swapModeLight(){
-		document.body.style.backgroundImage = "url('tilinglight.png')";
-	}
+    <!-- Games -->
+    <div class="games-body">
+        <div class="games-row">
+            <div class="games-tile">
+                <img src="images/console.png" alt="handheld games console graphic" style="width: 50vw;">
+            </div>
+            <div class="games-tile" style="margin-top: -2vw;">
+                <h4>I make</h4>
+                <h4>games, too...</h4>
+            </div>
+        </div>
+        
+        <div class="games-buttons">
+            <a href="games.html">
+                <div class="games-button">
+                    Check them out!
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=m-Zmum8yhv4&ab_channel=CondimentCountry">
+                <div class="games-button">
+                    Demo Reel
+                </div>
+            </a>
+        </div>
 
-</script>
+    </div>
 
+    <!-- Hackathon Wins! -->
+    <div class="hackathon-body">
+        <a href="https://devpost.com/software/fastthru">
+            <div class="hackathon-tile">
+                <img src="images/inrix.png" alt="Inrix Hackathon" style="margin: 1rem 0;">
+                <div>
+                    <h2>INRIX Hack 2021</h2>
+                    <h5>2nd Place</h5>
+                </div>
+                <h2>FastThru</h2>
+            </div>
+        </a>
+        
+        <a href="https://devpost.com/software/project-pineapple">
+            <div class="hackathon-tile">
+                <img src="images/h4h.png" alt="Hack For Humanity">
+                <div>
+                    <h2>H4H 2022</h2>
+                    <h5>2nd Place</h5>
+                </div>
+                <h2><span>Project Pineapple</span></h2>
+                
+            </div>
+        </a>
 
-<div class="iconDiv" id="hidingDiv">
-	<img src="icontransparent.png" alt="icon" width="200" height="200">
-</div>
+        <a href="https://devpost.com/software/bay-trips">
+            <div class="hackathon-tile">
+                <img src="images/inrix.png" alt="Inrix Hackathon" style="margin: 1rem 0;">
+                <h2>INRIX Hack 2022</h2>
+                <h5>1st Place</h5>
+                <h2>Tripfol.io</h2>
+            </div>
+        </a>
 
+    </div>
 
-<div class="bannerDiv">
-	<img src="NameLayout1.png" alt="banner" height="150" >
+    <!-- My Skills -->
 
-	<br>
+    <div class="skills-body">
+        <h1>Skills</h1>
+        <div class="skills-row">
+            <img src="images/design.png" alt="Design">
+            <h2>Design</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore... 
+            </p>
+        </div>
 
-	<div class="bannerButton">
-		<a href="index.html">
-			<img src="HomeButton.png" alt="home" height="50">
-		</a>
-	</div>
+        <div class="skills-row">
+            <img src="images/coding.png" alt="Coding">
+            <h2>Coding</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore... 
+            </p>
+        </div>
 
-	<div class="bannerButton">
-		<a href="about.html">
-			<img src="AboutButton.png" alt="about" height="50">
-		</a>
-	</div>
+        <div class="skills-row">
+            <img src="images/art.png" alt="Art">
+            <h2>Art</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+            </p>
+        </div>
+       
+    </div>
 
-	<div class="bannerButton">
-		<a href = "https://youtu.be/m-Zmum8yhv4">
-			<img src="DemoReelButton.png" alt="demo reel" height="50">
-		</a>
-	</div>
+    <!-- Footer -->
+    <div class="footer">
 
+        <div class="footer-logo-row">
+            <div class="footer-logo">
+                <a href="https://twitter.com/Senfflasche">
+                    <img src="images/twitter.png" alt="twitter">
+                </a>
+            </div>
 
-</div>
+            <div class="footer-logo">
+                <a href="https://www.linkedin.com/in/liamahearn/">
+                    <img src="images/linkedin.png" alt="linkedin">
+                </a>
+            </div>
 
-<br>
+            <div class="footer-logo">
+                <a href="https://uiuxdev.social/@senfflasche">
+                    <img src="images/mastodon.png" alt="mastodon">
+                </a>
+            </div>
+        </div>
 
+        <hr noshade="true" color="#FEF8E3" width="300vw">
 
-<div class="sideDiv" id = "hidingDiv">
+        <div class="footer-content">
+            <a href="mailto:liam.ahearn2@yahoo.com">liam.ahearn2@yahoo.com</a>
+        </div>
 
-<table>
-	<tr>
-		<td>
-			<a href="https://twitter.com/Senfflasche">
-				<img src="Twitter.png" alt="twitter" width="75%">
-			</a>
-		</td>
-		<td>
-			<a href="https://www.linkedin.com/in/liamahearn/">
-				<img src="Linkedin.png" alt="linkedin" width="75%">
-			</a>
-		</td>
-		<td>
-			<a href="https://senfflasche.newgrounds.com/">
-				<img src="NG.png" alt="newgrounds" width="75%">
-			</a>
-		</td>
-		<td>
-			<a>
-				<img src = "darkmode.png" alt="lightMode" onclick="flipflop()" width="75%" id = "swapIcon">
-			</a>
-		</td>
-
-	</tr>
-</table>
-
-</div>
-
-
-	<div class="mainDiv">
-		<div class="mainContentDiv" style="margin-right: 1em;">
-		<header>
-			<h1> Hackathon Projects </h1>
-		</header>
-
-		<!-- Group Project List -->
-			
-		<a href="https://devpost.com/software/bay-trips">
-			<img src="Tripfolio.png" width="100%" alt="Tripfolio">
-		</a>
-			
-		<a href="https://devpost.com/software/project-pineapple?ref_content=my-projects-tab&ref_feature=my_projects">
-			<img src="ProjectPineappleLogo.png" width="95%" alt="Project Pineapple">
-		</a>
-
-		<a href="https://devpost.com/software/fastthru">
-			<img src="FastThru.png" alt = "fast thru" width="100%">
-		</a>
-
-		
-
-
-	</div>
-
-	<div class="mainContentDiv">
-		<header>
-			<h1> Game Projects </h1>
-		</header>
-		<!-- Personal Project List -->
-		<a href="pico8.html">
-			<img src="pico8logo.png" width="100%">
-		</a>
-		
-		<a href="https://thesmashers.itch.io/hyperjustice">
-			<img src="hyperjusticeLogo.png" alt="hyperjustice" width="100%">
-		</a>
-
-
-	</div>
-
-</div>
-
-
+    </div>
+    
 </body>
 </html>
