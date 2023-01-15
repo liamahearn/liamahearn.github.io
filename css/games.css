@@ -1,0 +1,185 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    /*background-color: #FFE5F1;*/
+    background-color: #C0D6E7;
+}
+
+.footer {
+    /*background-color: #ABA2F9;*/
+    background-color: #2E3565;
+    height: 175px;
+    padding: 25px 0;
+}
+
+.footer-content {
+    /*color: #FEF8E3;*/
+    color: #FDFFE9;
+    display: flex;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.footer-content a {
+    text-decoration: none;
+    /*color: #FEF8E3;*/
+    color: #FDFFE9;
+}
+
+.footer-logo-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.footer-logo{
+    width: 40px;
+}
+
+.footer-logo img{
+    /*width: 3vw;*/
+    width: 40px;
+}
+
+.games-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 31px;
+    color: #FDFFE9;
+    
+}
+
+.games-red {
+    background-color: #D98897;
+    color: #FDFFE9;
+    border: 2px solid #FDFFE9;
+}
+
+.games-blue {
+    background-color: #C0D6E7;
+    color: #FDFFE9;
+    border: 2px solid #FDFFE9;
+}
+
+.games-red:hover {
+    background-color: #FDFFE9;
+    color: #D98897;
+}
+
+.games-blue:hover {
+    background-color: #FDFFE9;
+    color:#C0D6E7;
+}
+
+.header {
+    text-align: center;
+    padding: 4rem 0 1rem 0;
+}
+
+.header h1 {
+    color: #2E3565;
+    font-family: 'Beth Ellen', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.icon {
+    background-color: none;
+    border-radius: 20px;
+    height: 40px;
+    left: 1vw;
+    margin: 12;
+    position: absolute;
+}
+
+.icon img {
+    border-radius: 20px;
+    height: 40px;
+}
+
+.icon:hover{
+    /*background-color: #FFE5F1;*/
+    background-color: #D98897;
+}
+
+.navbar {
+    /* background-color: #C0DEFF;*/
+
+    height: 64px;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-button {
+    align-items: center;
+    background-color: none;
+    border-radius: 25px;
+    /*color: #ABA2F9;*/
+    color: #FDFFE9;
+    display: flex;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 20px;
+    height: 30px;
+    justify-content: center;
+    padding: 0.5rem 1.5rem;
+}
+
+.nav-button:hover {
+    /*background-color: #FFE5F1;*/
+    background-color: #FDFFE9;
+    color: #2E3565;
+}
+
+.portfolio-tile {
+    padding: 4rem 12.5%;
+}
+
+.portfolio-tile h1 {
+    color: #FDFFE9;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.portfolio-tile p {
+    color: #2E3565;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 1.25rem;
+}
+
+.games-row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem 0 0 0;
+    gap: 2%;
+}
+
+.games-row img {
+    width: 32%;
+}
+
+.games-row video {
+    width: 32%;
+}
