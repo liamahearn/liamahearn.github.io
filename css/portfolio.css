@@ -138,9 +138,8 @@ body {
 
 .portfolio-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
-    gap: 1.5rem;
 }
 
 .portfolio-row img {
