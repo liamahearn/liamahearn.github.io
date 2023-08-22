@@ -2,197 +2,164 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Liam A'Hearn</title>
+
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/landing.css">
+
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <div class="icon">
-            <img src="../images/icon.png" alt="Liam's Site">
-        </div>
-        
-        <a href="../index.html">
-            <div class="nav-button">Home</div>
-        </a>
-
-        <a href="../games.html">
-            <div class="nav-button">Games</div>
-        </a>
-        
-        <a href="../resume.pdf" target="_blank" rel="noopener noreferrer">
-            <div class="nav-button">Résumé</div>
-        </a>
-
-        <a href="../portfolio.html">
-            <div class="nav-button">Portfolio</div>
-        </a>
-
-        <a href="devlog/devlog-home.html">
-            <div class="nav-button">DevLogs</div>
-        </a>
-    </div>
-
-    <!-- Header -->
-    <div class="heading">
-        <div class="cloud" style="top: 85px; right: 15vw;">
-            <img src="images/cloud.png" alt="cloud-img" style="height: 50%; width: 50%;">
-        </div>
-        
-        <div class="heading-text">
-            <h1>Hi, I'm Liam.</h1>
-            <h3>Artist, programmer, designer.</h3>
-        </div>
-
-        <div class="cloud" style="top: 305px; left: 17.5%;">
-            <img src="images/cloud.png" alt="cloud-img" style="height: 60%; width: 60%; transform: scaleX(-1);">
-        </div>
-
-        <div class="cloud" style="top: 600px; left: 10%;">
-            <img src="images/cloud.png" alt="cloud-img">
-        </div>
-        <img src="images/mountain.png" alt="mountain-img" style="padding-left:2%">
-        <div class="cloud" style="top: 425px; right: 300px; transform: scaleX(-1);">
-            <img src="images/cloud.png" alt="cloud-img">
-        </div>
-    </div>
-
-    <!-- Games -->
-    <div class="games-body">
-        <div class="games-row">
-            <div class="games-tile">
-                <img src="images/console.png" alt="handheld games console graphic" style="width: 50vw;">
-            </div>
-            <div class="games-tile" style="margin-top: -2vw;">
-                <h4>I make</h4>
-                <h4>games, too...</h4>
-            </div>
-        </div>
-        
-        <div class="games-buttons">
-            <a href="games.html">
-                <div class="games-button">
-                    Check them out!
+    <header>
+        <div class="navigation-bar"> 
+            <a href="./index.html">
+                <div class="name-logo">
+                    LIAM<br>A'HEARN
                 </div>
             </a>
-            <a href="https://www.youtube.com/watch?v=m-Zmum8yhv4&ab_channel=CondimentCountry">
-                <div class="games-button">
-                    Demo Reel
-                </div>
-            </a>
+            <nav>
+                <a href="./pages/contact.html">
+                    <button>Contact</button>
+                </a>
+                <a href="./assets/global/resume.pdf" target="_blank" rel="noopener">
+                    <button>Resume</button>
+                </a>
+            </nav>
         </div>
 
-    </div>
-
-    <!-- Hackathon Wins! -->
-    <div class="hackathon-body">
-        <a href="https://devpost.com/software/fastthru">
-            <div class="hackathon-tile">
-                <img src="images/inrix.png" alt="Inrix Hackathon" style="margin: 1rem 0;">
-                <div>
-                    <h2>INRIX Hack 2021</h2>
-                    <h5>2nd Place</h5>
-                </div>
-                <h2>FastThru</h2>
+    </header>
+    <main>
+        <section class="welcome">
+            <div class="intro">
+                Hi, I'm <br> Liam.
             </div>
-        </a>
-        
-        <a href="https://devpost.com/software/project-pineapple">
-            <div class="hackathon-tile">
-                <img src="images/h4h.png" alt="Hack For Humanity">
-                <div>
-                    <h2>H4H 2022</h2>
-                    <h5>2nd Place</h5>
-                </div>
-                <h2><span>Project Pineapple</span></h2>
-                
+            <div class="welcome-icons">
+                <img src="./assets/landing/Design.png" alt="Design">
+                <img src="./assets/landing/Coding.png" alt="Coding">
+                <img src="./assets/landing/Art.png" alt="Art">
             </div>
-        </a>
+        </section>
+        <br>
+        <hr>
+        <section class="directory">
+            <!-- DIRECTORY ITEM 1 -->
+            <section class="directory-item">
+                <a href="./pages/professional-personal-projects.html">
+                    <article>
+                        <h2>
+                            Professional + <br>Personal Projects
+                        </h2>
+                        <div class="icon-canvas">
+                            <img src="./assets/landing/projectpersonal.png" alt="Personal and Professional Projects" style="position: relative; bottom: 10px">
+                        </div>
+                    </article>
+                </a>
+                <aside>
+                    
+                    <a href="./pages/professional-personal-projects.html">
+                        <h3>
+                            Professional / Personal Projects
+                        </h3>
+                    </a>
+                    
+                    <p>
+                        I have had the opportunity to work on several projects professionally- whether as an intern, researcher, or member of an organization.
+                    </p>
+                    <p>
+                        I also love coding on my own time! I have plenty of projects that I am excited to share, and I hope my passion is visible in each and every one!
+                    </p>
+                </aside>
+            </section>
 
-        <a href="https://devpost.com/software/bay-trips">
-            <div class="hackathon-tile">
-                <img src="images/inrix.png" alt="Inrix Hackathon" style="margin: 1rem 0;">
-                <h2>INRIX Hack 2022</h2>
-                <h5>1st Place</h5>
-                <h2>Tripfol.io</h2>
-            </div>
-        </a>
+            <!-- DIRECTORY ITEM 2 -->
+            <section class="directory-item">
 
-    </div>
+                <a href="./pages/hackathon-projects.html">
+                    <article>
+                        <h2>
+                            Hackathon<br>Projects
+                        </h2>
+                        <div class="icon-canvas">
+                            <img src="./assets/landing/trophies.png" alt="Hackathon Wins">
+                        </div>
+                    </article>
+                </a>
 
-    <!-- My Skills -->
+                <aside>
+                    <a href="./pages/hackathon-projects.html">
+                        <h3>
+                            Hackathon Projects
+                        </h3>
+                    </a>
+                    <p>
+                        I always jump at the chance to participate in my school's hackathons, and I've made a pretty good showing over the past several years! Take a look at the projects I've developed!                    </p>
+                    <p>
+                        I've performed UI design for every project, as well as a good deal of frontend programming as well!
+                    </p>
+                </aside>
+            </section>
 
-    <div class="skills-body">
-        <h1>Skills</h1>
-        <div class="skills-row">
-            <img src="images/design.png" alt="Design">
-            <h2>Design</h2>
-            <p>
-                Slowly but surely, I’ve been picking up an eye for design. 
-                After my first experience designing UI during a hackathon, 
-                I’ve pursued this trade by taking classes and practicing 
-                on my own for over a year now!
-            </p>
-        </div>
+            <!-- DIRECTORY ITEM 3 -->
+            <section class="directory-item">
+                <a href="./pages/game-projects.html">
+                    <article>
+                        <h2>
+                            Game Projects
+                        </h2>
+                        <div class="icon-canvas">
+                            <img src="./assets/landing/GameBoy.png" alt="GameBoy" style="position: relative; bottom: 10px">
+                        </div>
+                    </article>
+                </a>
+                <aside>
+                    <a href="./pages/game-projects.html">
+                        <h3>
+                            Game Projects
+                        </h3>
+                    </a>
+                    <p>
+                        I absolutely love making games, and I have plenty that I am very excited to share!                    </p>
+                    <p>
+                        Several can be played in the browser, so please give them a try!                    
+                    </p>
+                </aside>
+            </section>
 
-        <div class="skills-row">
-            <img src="images/coding.png" alt="Coding">
-            <h2>Coding</h2>
-            <p>
-                Programming is what I went to school for, and I’d like to 
-                say I’m alright! I’ve held down a frontend programming 
-                role at several hackathons to great success, and worked 
-                in a startup as well!
-            </p>
-        </div>
+            <!-- DIRECTORY ITEM 4 -->
+            <section class="directory-item">
+                <a href="./pages/gallery.html">
+                    <article>
+                        <h2>
+                            Gallery
+                        </h2>
+                        <div class="icon-canvas">
+                            <img src="./assets/landing/facesprite.png" alt="gallery">
+                        </div>
+                    </article>
+                </a>
+                <aside>
+                    <a href="./pages/gallery.html">
+                        <h3>
+                            Gallery
+                        </h3>
+                    </a>
+                    <p>
+                        This is a spot for all sorts of miscellaneous design, art, and programming work that don't quite fit anywhere else!                     
+                    </p>
+                    
+                </aside>
+            </section>
 
-        <div class="skills-row">
-            <img src="images/art.png" alt="Art">
-            <h2>Art</h2>
-            <p>
-                I’m pretty nifty with the pen tool! I created all the visuals
-                and icons you’ll see here, even replicating logos so I can 
-                get the colors to look juuuust right! I also enjoy pixel art,
-                and I’m slowly picking up 3d, too!
-            </p>
-        </div>
+        </section>
+
        
-    </div>
 
-    <!-- Footer -->
-    <div class="footer">
+    </main>
 
-        <div class="footer-logo-row">
-            <div class="footer-logo">
-                <a href="https://twitter.com/Senfflasche">
-                    <img src="images/twitter.png" alt="twitter">
-                </a>
-            </div>
+    <footer>
 
-            <div class="footer-logo">
-                <a href="https://www.linkedin.com/in/liamahearn/">
-                    <img src="images/linkedin.png" alt="linkedin">
-                </a>
-            </div>
-
-            <div class="footer-logo">
-                <a href="https://uiuxdev.social/@senfflasche">
-                    <img src="images/mastodon.png" alt="mastodon">
-                </a>
-            </div>
-        </div>
-
-        <hr noshade="true" color="#FEF8E3" width="300vw">
-
-        <div class="footer-content">
-            <a href="mailto:liam.ahearn2@yahoo.com">liam.ahearn2@yahoo.com</a>
-        </div>
-
-    </div>
+     
+    </footer>
     
 </body>
 </html>
