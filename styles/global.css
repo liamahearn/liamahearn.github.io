@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,800;6..12,900&display=swap');
+
+@media (max-width: 1500px) {
+
+    .header {
+        width: 100%;
+    }
+
+}
+
+:root {
+    --dark: #2E3565;
+    --primary: #01A6B9;
+    --accent: #C0D6E7;
+    --light: #ffffff;
+    --yellow: #F5D973;
+
+    --margin: 22.5%;
+
+    font-size: 16px;
+}  
+
+a {
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--light);
+    margin: 0;
+}
+
+main {
+    padding: 0 var(--margin) 0 var(--margin);
+}
+
+header {
+    width: calc(100% - var(--margin)*2);
+    background-color: var(--primary);
+ 
+    padding: 0 var(--margin) 0 var(--margin);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+nav button {
+    margin: 15px;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+nav button:hover {
+    background-color: var(--light);
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.name-logo {
+
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;   
+    background-color: var(--light);
+    color: var(--primary);
+    line-height: 91.9%;;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 0;
+}
+
+.navigation-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr {
+    width: 100%;
+    border: 6px solid var(--primary);
+    border-radius: 6px;
+}
+
+footer {
+    margin-top: 10rem;
+    background-color: var(--primary);
+    height: 250px;
+}
