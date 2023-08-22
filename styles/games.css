@@ -1,0 +1,47 @@
+.gameboy-display {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    background-image: url('../assets/projects-general/BG.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    gap: 3vw;
+
+    margin: 7rem 0 6rem 0;
+}
+
+.gameboy {
+    position: relative;
+    width: 414px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.gameboy-border {
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    pointer-events: none;
+}
+
+.gameboy-image {
+    z-index: 1;
+    position: absolute;
+    top: 2.25vw;
+    align-self: center;
+    width: 62%;
+}
+
+.computer-display video{
+    width: 100%;
+    border: 3px solid var(--dark);
+    border-radius: 1rem;
+}
