@@ -1,0 +1,134 @@
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    gap: 1rem;
+}
+
+.message-label {
+    width: 100%;
+}
+
+.message-label > textarea {
+    min-width: calc(100% - 6px);
+    max-width: calc(100% - 6px);
+    min-height: 100px;
+}
+
+.contact-row > * {
+
+    width: 100%;
+
+}
+
+.contact-row label input {
+    width: calc(100% - 6px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+form label > p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+textarea {
+    color: var(--dark-blue);
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    border: 2px solid var(--light-blue);
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+textarea:focus {
+
+    outline: none !important;
+    border: 2px solid var(--medium-blue);
+    background-color: #F6F6F6;
+
+}
+
+input[type="text"]
+{
+    color: var(--dark-blue);
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+
+    border: 2px solid var(--light-blue);
+    border-radius: 4px;
+    width: 90%;
+    height: 32px;
+    font-size: 15px;
+}
+
+input:focus[type="text"]
+{
+    outline: none !important;
+    border: 2px solid var(--medium-blue);
+    background-color: #F6F6F6;
+}
+
+input[type="email"]
+{
+    color: var(--dark-blue);
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+
+    border: 2px solid var(--light-blue);
+    border-radius: 4px;
+    width: 90%;
+    height: 32px;
+    font-size: 15px;
+    
+}
+
+input:focus[type="email"]
+{
+    outline: none !important;
+    border: 2px solid var(--medium-blue);
+    background-color: #F6F6F6;
+}
+
+.submit-button {
+    background-color: var(--medium-blue);
+    color: var(--light);
+    border: none;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    width: 100%;
+
+    border-radius: 4px;
+    height: 36px;
+    font-size: 15px;
+
+    cursor: pointer;
+    
+}
+
+.asterisk {
+
+    color: var(--medium-blue);
+
+}
+
+.contact-section > a > img {
+
+    width: 100%;
+
+}

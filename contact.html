@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam A'Hearn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <script src="./scripts/mobileMenu.js" async defer></script>
+
+</head>
+<body>
+
+    <aside>
+        <section>
+            <div class="header-group">
+                <a class="window" href="./index.html">
+                    <section class="dots">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </section>
+                    <h1>LIAM<br>A'HEARN</h1>
+                </a>
+        
+                <section class="subtitles">
+                    <h3>UI/UX Designer</h3>
+                    <h3>Computer Engineer</h3>
+                </section>
+                
+                <!-- <p class="blurb">I'm passionate about designing and building stylish and usable products! I enjoy programming websites, games, and apps!</p> -->
+
+            </div>
+            <nav class="navigation">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./resume.html">Resumé</a>
+            </nav>
+    
+            <footer class="window">
+                <section class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+                <section class="socials">
+                    <a href="https://github.com/liamahearn">
+                        <img src="./assets/global/github.png" alt="GitHub">
+                    </a> <!-- GitHub -->
+                    <a href="https://www.linkedin.com/in/liamahearn/">
+                        <img src="./assets/global/linkedin.png" alt="LinkedIn">
+                    </a> <!-- LinkedIn -->  
+                    <a href="https://discordapp.com/channels/@me/263378688601489410">
+                        <img src="./assets/global/Discord Logo.png" alt="Discord">
+                    </a><!-- Discord -->
+                    <a href="https://leetcode.com/u/liamadev/">
+                        <img src="./assets/global/Leetcode Logo.png" alt="LeetCode">
+                    </a><!-- LeetCode-->
+                </section>
+    
+            </footer>
+
+        </section>
+    </aside>
+
+
+    <section class="main-section">
+        <header class="mobile-header">
+            
+            <a href="./index.html">
+                <div class="little-dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <h4>LIAM<br>A'HEARN</h4>
+            </a>
+
+            <button class="mobile-button" onclick="mobileButtonClick()">
+                <img src="./assets/global/hamburgerMenu.png" alt="Mobile Menu">
+            </button>
+
+        </header>
+        <div class="mobile-menu-options" style="display: none;">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./resume.html">Resumé</a>
+        </div>
+    <main class="content-column">
+        
+        <article>
+            <h1>CONTACT ME</h1>
+            <p>I would love to hear from you! Please enter your information below or reach out to me on <a class="bold-link" href="https://www.linkedin.com/in/liamahearn/">LinkedIn</a>.</p>
+            <section class="computer-display-wrapper">
+                <section class="contact-section">
+
+                 <form action="https://formspree.io/f/mvgoroyd" method="POST">
+                    <div class="contact-row">
+                        
+                        <label>
+                            <p>Preferred name<strong class="asterisk">*</strong></p>
+                            <input type="text" name="Preferred name">
+                        </label>
+                        <label>
+                            <p>Email address<strong class="asterisk">*</strong></p>
+                            <input type="email" name="email">
+                        </label>
+
+                    </div>
+                    
+                    <label class="message-label">
+                        <p>Message<strong class="asterisk">*</strong></p>
+                        <textarea name="message"></textarea>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button type="submit" class="submit-button">Send message</button>
+                </form>
+
+
+                </section>
+            </section>
+            
+        </article>
+
+        
+    </main>
+
+    <footer class="mobile-footer">
+        <a href="https://github.com/liamahearn">
+            <img src="./assets/global/github.png" alt="GitHub">
+        </a> <!-- GitHub -->
+        <a href="https://www.linkedin.com/in/liamahearn/">
+            <img src="./assets/global/linkedin.png" alt="LinkedIn">
+        </a> <!-- LinkedIn -->  
+        <a href="https://discordapp.com/channels/@me/263378688601489410">
+            <img src="./assets/global/Discord Logo.png" alt="Discord">
+        </a><!-- Discord -->
+        <a href="https://leetcode.com/u/liamadev/">
+            <img src="./assets/global/Leetcode Logo.png" alt="LeetCode">
+        </a><!-- LeetCode-->
+
+    </footer>
+    </section>
+
+</body>
+</html>
