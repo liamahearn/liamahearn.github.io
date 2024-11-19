@@ -368,3 +368,95 @@ main {
         visibility: hidden;
     }
 }
+
+@media screen and (max-width: 730px) {
+    
+    main {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        animation-name: none;
+    }
+
+    .picture-frame {
+        transform: none;
+        min-width: 50vw;
+        max-width: 100vw;
+        scale: 1;
+    }
+
+    .dark-div {
+        display: none;
+        animation-name: none;
+    }
+
+    @keyframes intro {
+        0% {
+            width: 100vw;
+            height: 71vw;
+            position: absolute;
+            right: 0;
+            top: calc(50vh - 35vw);
+        }
+
+        70% {
+            width: 100vw;
+            height: 71vw;
+            position: absolute;
+            right: 0;
+            top: calc(50vh - 35vw);
+        }
+
+        100%  {
+            position: absolute;
+            right: 6px;
+            top: 10px;
+            width: 220px;
+            height: 150px;
+        }
+
+    }
+
+    @keyframes hop-flip {
+    
+        15% {
+            left: calc(50vw - 254px);
+            bottom: 40px;
+            visibility: visible;
+        }
+    
+        41% {
+            left: calc(50vw - 254px);
+            bottom: 40px;
+        }
+    
+        48%  {
+            left: calc(50vw - 254px);
+            bottom: 200px;
+        }
+    
+        55%  {
+            left: calc(50vw - 254px);
+            bottom: -50px;
+        }
+    
+        62% {
+            left: calc(50vw - 254px);
+            bottom: 40px;
+            border: 8px solid black;
+        }
+    
+        100% {
+            left: calc(50vw - 254px);
+            bottom: 40px;
+            border-radius: 100px;
+            border: 8px solid white;
+        }   
+    
+    }
+
+
+}
